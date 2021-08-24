@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //getdetails sera nuestra funcion para mandar solicitud AJAX
     var getdetails = function(id){
-        return $.getJSON("http://localhost/JQuery/PHP/personas.php",{"id":id})
+        return $.getJSON("personas.php",{"id":id})
     }
     //Al hacer click sobre cualquier elemento que tenga data user
     $('[data-user]').click(function(e){
@@ -31,7 +31,7 @@ $(document).ready(function(){
     $("#response-container").html(output);
     } else{
     // response.true no es verdadero
-    $("#response-container").html('No ha habido suerte'+ response.data.message );
+    $("#response-container").html('No ha habido suerte '+ response.data.message );
     }
     })
     .fail(function(jqXHR, textStatus, errorThrown){
