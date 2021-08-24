@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/116ea3b553.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/styles2.css">
+    <title>Trabajando Con  Ajax, JQuery, PHP y Json</title>
+</head>
+<body>
+    <div class="Contenedor">
+    <Header class="Header">
+        <li class="Header__li--Menu"><a href="http://localhost/JQuery/HTML/index.html"><i class="fas fa-arrow-circle-left"></i> Volver</a></li>
+        
+    </Header>
+    <main class="Main"> 
+        <Section class="Main__Section">
+            <button data-user="1" class="Main__Section--Botones">Dame los datos de la persona con ID = 1</button>
+            <button data-user="[1,2,3]" class="Main__Section--Botones">Dame los Datos de las personas con ID = 1, ID = 2 ID = 3</button>
+            <button data-user="0" class="Main__Section--Botones">Ningun Usuario</button>
+        </Section>
+        <Section id="response-container" class="Main__Section--respuesta"></Section>
+    </main>
+    <footer class="Footer">
+        <a href="https://www.w3.org/" target="_BLANK"><img src="../IMG/w3c_home_nb.png" alt="W3C" class="Footer__img--izquierda"></a>
+        &copy; Cristhofer T. 2021
+        <a href="https://github.com/CristhoferT29/JQuery.git" target="_BLANK"><img src="../IMG/GitHub-Mark-Light-32px.png" alt="GitHub" class="Footer__img--derecha"></a>
+    </footer>
+    <!--Script de JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--Fin del Script-->
+    <script src="../JS/MiScript.js"></script>
+    </div>
+</body>
+</html>

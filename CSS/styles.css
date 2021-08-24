@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    font-family: 'Hahmlet', serif;
+    font-size: 20px;
+}
+/*Contenedor Grid para crear nuestro layout*/
+.Contenedor{
+    display: grid;
+    grid-gap: 20px;
+    /*Grid template columns nos dice el numero de columnas a crear y su tamaño*/
+    grid-template-columns: repeat(6, 1fr);
+    /*Grid template rows nos dice el numero de filas a crear y su tamaño*/
+    grid-template-rows: repeat(3, auto);
+    /*Grid template areas Creamos la forma de nuestro layout*/
+    grid-template-areas:
+    "Header Header Header Header Header Header"
+    "Aside Contenido Contenido Contenido Contenido Contenido"
+    "Footer Footer Footer Footer Footer Footer" ;
+}
+.Contenedor .Header,
+.Contenedor .Contenido,
+.Contenedor .Menu2,
+.Contenedor .Footer{
+    padding: 10px;
+    border-radius: 3px;
+}
+
+
+/*Contenedor del Menu principal*/
+.Header{
+    display: flex;
+    background-color: #12203e;
+    min-height: 40px;
+    /*Con Grid area asignamos el espacio que va a ocupar nuestro contenedor en el layout*/
+    grid-area: Header;
+    color: #fff;
+    font-size: 25px;
+    justify-content:space-between;
+}
+
+/*Estilos de los links del Menu principal*/
+.Header > a{
+    text-decoration: none;
+}
+.Header > a:link{
+    color: #fff;
+}
+.Header >a:visited{
+    color: #fff;
+}
+.Header > a:hover{
+    color: #ADADAD;
+}
+
+/*Contenedor del aside*/
+.Menu2{
+    display: flex;
+    flex-direction: column;
+    max-height: 490px;
+    position:static;
+    background-color: orange;
+    /*Ahora asignamos el espacio de nuestro aside en el layout*/
+    grid-area: Aside;
+    font-size: 25px;
+    justify-content:space-between;
+    align-items:center;
+}
+/*Estilos de los links del Menu 2*/
+.Menu2 > a{
+    text-decoration: none;
+}
+.Menu2 > a:link{
+    color: #000;
+}
+.Menu2 >a:visited{
+    color: #000;
+}
+.Menu2 > a:hover{
+    color: #ADADAD;
+}
+
+/*Contenedor del Main*/
+.Contenido{
+    background-color: #12203e;
+    grid-area: Contenido;
+    height: 485px;
+    overflow-y: auto;
+}
+/*Contenedor del pie de pagina*/
+.Footer{
+    background-color: #12203e;
+    grid-area: Footer;
+    min-height: 25px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Contenedor base para los ejercicios*/
+.Contenedores{
+    background-color: #ADADAD;
+    margin: 45px 25px;
+    min-height: 200px;
+    padding: 10px 10px;
+    text-align: center;
+}
+/*Contenedor interno del ejercicio 1*/
+#pandora{
+    min-height: 120px;
+    margin: 15px 10px; 
+    border: 3px solid #12203e;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+}
+/*Contenedor interno del ejercicio 2*/
+#horcruxes{
+    max-height: 100px;
+    margin: 45px auto;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #12203e;
+    overflow-y: auto;
+}
+/*Contenedor interno del #horcruxes del ejercicio 2*/
+#horcruxes1{
+    margin: 20px 40px;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #12203e;
+}
+/*Contenedor interno del ejercicio 6*/
+#Lista1{
+    background-color: #fff;
+    margin: 20px 25px;
+    padding: 10px 10px;
+    text-align: center;
+    border: 2px solid #12203e;
+}
+/*Contenedor interno del ejercicio 8*/
+#Lista2{
+    background-color: #fff;
+    margin: 20px 25px;
+    padding: 10px 10px;
+    text-align: center;
+    border: 2px solid #12203e;
+    overflow-y: auto;
+    max-height: 235px;
+}
+/*Estilos del ejercicio que usa listas*/
+.gryffindor{
+    background-color: orange;
+    border: 2px solid red;
+}
+
+.ravenclaw{
+    border: 2px solid blue;
+}
+.hufflepuff{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.slytherin{
+    background-color: gray;
+    border: 2px solid greenyellow;
+}
+
+#w3c{
+    height: 30px ;
+    width: 60px;
+}
+/*Clase para todos los Botones*/
+.boton{
+    background-color: #28E4F0;
+    height: 50px;
+    width: 100px;
+    padding: 5px 5px;
+    border-radius: 15px;
+}
+/*Hover de los botones*/
+.boton:hover{
+    background-color: #00D4F5;
+}
+/*Hover del logo de GitHub*/
+#Git:hover{
+    background-color: #ADADAD;
+    border-radius: 50%;
+}
+
